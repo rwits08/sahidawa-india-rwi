@@ -1,8 +1,9 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./.tmp/test-dist"
+    "outDir": "./.tmp/test-dist",
+    "types": ["node", "jest", "supertest"]
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
   "exclude": ["node_modules", "dist", ".tmp"]
 }
